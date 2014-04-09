@@ -2,6 +2,20 @@
 
 This is a port of [Ember.js TodoMVC](http://todomvc.com/architecture-examples/emberjs/) built using the new Ember command line utility [ember-cli](https://github.com/stefanpenner/ember-cli).
 
+## Setup
+
+To install and start up the app run the following commands:
+
+```
+npm install -g ember-cli
+git clone https://github.com/javierjulio/ember-cli-todomvc.git
+cd ember-cli-todomvc
+npm install
+ember server
+```
+
+Go to [http://localhost:4200](http://localhost:4200) in your web browser.
+
 ## Differences from the Getting Started guide
 
 Due to using the latest version of Ember (version 1.5 at the time of writing) a few things have changed that made some of the code in the TodoMVC application unnecessary.
