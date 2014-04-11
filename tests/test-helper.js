@@ -5,6 +5,9 @@ Ember.testing = true;
 import resolver from './helpers/resolver';
 require('ember-qunit').setResolver(resolver);
 
+window.startApp          = require('ember-todos/tests/helpers/start-app')['default'];
+window.isolatedContainer = require('ember-todos/tests/helpers/isolated-container')['default'];
+
 function exists(selector) {
   return !!find(selector).length;
 }
