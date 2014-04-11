@@ -1,4 +1,4 @@
-import resolver from 'ember-todos/tests/helpers/resolver';
+import resolver from 'ember-cli-todomvc/tests/helpers/resolver';
 
 function isolatedContainer(fullNames) {
   var container = new Ember.Container();

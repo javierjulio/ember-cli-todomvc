@@ -1,6 +1,6 @@
 var __testing_context__;
 
-import resolver from 'ember-todos/tests/helpers/resolver';
+import resolver from 'ember-cli-todomvc/tests/helpers/resolver';
 
 function defaultSubject(factory, options) {
   return factory.create(options);
