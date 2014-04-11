@@ -1,4 +1,4 @@
-var Router = require('ember-todos/router')['default'];
+var Router = require('ember-cli-todomvc/router')['default'];
 
 function startApp(attrs) {
   var App;
@@ -15,7 +15,7 @@ function startApp(attrs) {
   });
 
   Ember.run(function(){
-    App = require('ember-todos/main')['default']('ember-todos', attributes);
+    App = require('ember-cli-todomvc/main')['default']('ember-cli-todomvc', attributes);
     App.setupForTesting();
     App.injectTestHelpers();
   });

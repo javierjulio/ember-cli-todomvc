@@ -1,4 +1,4 @@
-import TodosRoute from 'ember-todos/routes/todos';
+import TodosRoute from 'ember-cli-todomvc/routes/todos';
 
 var route, expectedModel, store;
 

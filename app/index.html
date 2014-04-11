@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>EmberTodos</title>
+    <title>EmberCliTodomvc</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script>
       window.ENV = {{ENV}};
-      document.write('<base href="' + document.location.origin + ENV.rootURL + '" />');
+      document.write('<base href="' + ENV.rootURL + '" />');
     </script>
 
     <link rel="stylesheet" href="assets/app.css">
@@ -17,7 +17,7 @@
   </head>
   <body>
     <script>
-      window.EmberTodos = require('ember-todos/main')['default']('ember-todos');
+      window.EmberCliTodomvc = require('ember-cli-todomvc/main')['default']('ember-cli-todomvc');
     </script>
   </body>
 </html>
