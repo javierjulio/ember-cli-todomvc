@@ -2,6 +2,36 @@
 
 This is a port of [Ember.js TodoMVC](http://todomvc.com/architecture-examples/emberjs/) built using the new Ember command line utility [ember-cli](https://github.com/stefanpenner/ember-cli).
 
+**Help Needed:** I haven't been able to run successfully the first set of tests ported over from Stefan's [EAK implementation of Ember TodoMVC](https://github.com/stefanpenner/ember-app-kit-todos/). I don't understand what's wrong with my import statement in the first test since the path looks right. I've tried a few different ones but I keep getting the same error. If you have experience with this I'd appreciate any help.
+
+```
+ember-cli-todomvc: (master) ember server
+Livereload server on port 31929
+Serving on http://0.0.0.0:4200
+ENOENT, no such file or directory 'tmp/tree_merger-tmp_dest_dir-v3Zaj9hl.tmp/ember-todos/routes/todos.js' Error: ENOENT, no such file or directory 'tmp/tree_merger-tmp_dest_dir-v3Zaj9hl.tmp/ember-todos/routes/todos.js'
+    at Object.fs.statSync (fs.js:684:18)
+    at addModule (/Users/JavierJulio/Projects/ember-cli-todomvc/node_modules/broccoli-es6-concatenator/index.js:81:46)
+    at addModule (/Users/JavierJulio/Projects/ember-cli-todomvc/node_modules/broccoli-es6-concatenator/index.js:124:9)
+    at /Users/JavierJulio/Projects/ember-cli-todomvc/node_modules/broccoli-es6-concatenator/index.js:57:7
+    at invokeCallback (/Users/JavierJulio/.node/lib/node_modules/ember-cli/node_modules/rsvp/dist/commonjs/rsvp/promise.js:228:21)
+    at publish (/Users/JavierJulio/.node/lib/node_modules/ember-cli/node_modules/rsvp/dist/commonjs/rsvp/promise.js:176:9)
+    at publishFulfillment (/Users/JavierJulio/.node/lib/node_modules/ember-cli/node_modules/rsvp/dist/commonjs/rsvp/promise.js:312:5)
+    at flush (/Users/JavierJulio/.node/lib/node_modules/ember-cli/node_modules/rsvp/dist/commonjs/rsvp/asap.js:41:9)
+    at process._tickCallback (node.js:415:13)
+Error: ENOENT, no such file or directory 'tmp/tree_merger-tmp_dest_dir-v3Zaj9hl.tmp/ember-todos/routes/todos.js'
+ENOENT, no such file or directory 'tmp/tree_merger-tmp_dest_dir-H4wZoNFb.tmp/ember-todos/routes/todos.js' Error: ENOENT, no such file or directory 'tmp/tree_merger-tmp_dest_dir-H4wZoNFb.tmp/ember-todos/routes/todos.js'
+    at Object.fs.statSync (fs.js:684:18)
+    at addModule (/Users/JavierJulio/Projects/ember-cli-todomvc/node_modules/broccoli-es6-concatenator/index.js:81:46)
+    at addModule (/Users/JavierJulio/Projects/ember-cli-todomvc/node_modules/broccoli-es6-concatenator/index.js:124:9)
+    at /Users/JavierJulio/Projects/ember-cli-todomvc/node_modules/broccoli-es6-concatenator/index.js:57:7
+    at invokeCallback (/Users/JavierJulio/.node/lib/node_modules/ember-cli/node_modules/rsvp/dist/commonjs/rsvp/promise.js:228:21)
+    at publish (/Users/JavierJulio/.node/lib/node_modules/ember-cli/node_modules/rsvp/dist/commonjs/rsvp/promise.js:176:9)
+    at publishFulfillment (/Users/JavierJulio/.node/lib/node_modules/ember-cli/node_modules/rsvp/dist/commonjs/rsvp/promise.js:312:5)
+    at flush (/Users/JavierJulio/.node/lib/node_modules/ember-cli/node_modules/rsvp/dist/commonjs/rsvp/asap.js:41:9)
+    at process._tickCallback (node.js:415:13)
+Error: ENOENT, no such file or directory 'tmp/tree_merger-tmp_dest_dir-H4wZoNFb.tmp/ember-todos/routes/todos.js'
+```
+
 ## Setup
 
 To install and start up the app run the following commands:
