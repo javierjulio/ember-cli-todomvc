@@ -1,6 +1,7 @@
+var Application = require('ember-cli-todomvc/app')['default'];
 var Router = require('ember-cli-todomvc/router')['default'];
 
-function startApp(attrs) {
+export default function startApp(attrs) {
   var App;
 
   var attributes = Ember.merge({
@@ -15,7 +16,7 @@ function startApp(attrs) {
   });
 
   Ember.run(function(){
-    App = require('ember-cli-todomvc/main')['default']('ember-cli-todomvc', attributes);
+    App = Application.create(attributes);
     App.setupForTesting();
     App.injectTestHelpers();
   });
@@ -24,5 +25,3 @@ function startApp(attrs) {
 
   return App;
 }
-
-export default startApp;
